@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <LinearLayout
+       android:layout_height="260dp"
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:gravity="center_horizontal"
+       android:background="@drawable/lead_1">
+    <zhuoxin.andriody.com.newsday.Util.CircleImageView
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:src="@drawable/login_defult_img"
+        android:layout_marginTop="75dp"
+        android:id="@+id/login_img"
+        app:border_color="@color/white"
+        app:border_width="2dp"/>
+       <TextView
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:id="@+id/menu_text"
+       android:layout_gravity="center"
+       android:textColor="@color/white"
+       android:text="立即登陆"
+           android:layout_marginTop="20dp"
+       android:padding="15dp"/>
+</LinearLayout>
+</LinearLayout>

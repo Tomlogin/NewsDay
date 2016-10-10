@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.FragmentInfo">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/DeepSkyBlue"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar"></android.support.v7.widget.Toolbar>
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/home_drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.view.ViewPager
+                android:layout_weight="1"
+                android:id="@+id/main_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                ></android.support.v4.view.ViewPager>
+
+            <RadioGroup
+                android:layout_weight="0"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/tv_one"
+                    android:text="资讯"
+                    style="@style/home_button"
+                    android:checked="true"
+                    android:drawableTop="@drawable/home_newsbutton"
+                    />
+                <RadioButton
+                    android:id="@+id/tv_two"
+                    android:text="热点"
+                    style="@style/home_button"
+                    android:drawableTop="@drawable/home_hotbutton"
+
+                    />
+                <RadioButton
+                    android:id="@+id/tv_three"
+                    style="@style/home_button"
+                    android:text="搜索"
+                    android:drawableTop="@drawable/home_seachbutton"
+
+                    />
+            </RadioGroup>
+        </LinearLayout>
+        <android.support.design.widget.NavigationView
+            android:id="@+id/home_NavigationView"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/header_layout"
+            app:menu="@menu/drawerlayout"></android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>

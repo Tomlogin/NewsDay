@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="zhuoxin.andriody.com.newsday.Activity.AddActivity">
+<android.support.v7.widget.Toolbar
+    android:id="@+id/addactivity_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前标签"
+        android:padding="5dp"/>
+    <zhuoxin.andriody.com.newsday.View.FlowLayout
+        android:id="@+id/addactivity_flowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </zhuoxin.andriody.com.newsday.View.FlowLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加兴趣标签"
+        android:padding="5dp"/>
+    <ListView
+        android:id="@+id/addactivity_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>
